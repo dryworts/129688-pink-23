@@ -1,12 +1,231 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+    <style>
+      .page-header {
+        background-color: #000000;
+      }
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+    </style>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="background-wrapper"><!--контейнер для руки начало-->
+        <!--цетровщик здесь начало-->
+        <div class="logo-container">
+          <a class="logo-container__logo" href="#">
+            <img class="logo-container__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип PINK">
+          </a>
+          <button class="logo-container__nav-close">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+          <button class="logo-container__nav-open">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+          </ul>
+        </nav>
+
+        <h1 class="header__title">Взгляните на жизнь иначе</h1>
+
+        <!--центровщик здесь конец-->
+      </div><!--контейнер для руки конец-->
+
+
+
+      <div class="differently">
+        <button class="differently__button">Скачать приложение</button>
+        <ul class="differently__applications">
+          <li class="differently__applications-item"><a class="differently__applications-apple" href="#">
+            <img src="#" width="47" height="56" alt="лого для apple приложений">
+          </a></li>
+          <li class="differently__applications-item"><a class="differently__applications-android" href="#">
+            <img src="#" width="47" height="56" alt="лого для android приложений">
+          </a></li>
+          <li class="differently__applications-item"><a class="differently__applications-windows" href="#">
+            <img src="#" width="47" height="56" alt="лого для windows приложений">
+          </a></li>
+        </ul>
+        <p class="differently__description"> Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+
+      </div>
+
+    </header>
+
+    <main class="main">
+      <section class="features">
+        <h2 class="visually-hidden">Особенности приложения PINK </h2>
+        <p class="features__content">Устали от серости мегаполиса?</p>
+        <p class="features__suggest">Нам есть, что вам предложить!</p>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="fetures__header">Поднимает настроение</h3>
+            <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="fetures__header">Меняет мир вокруг</h3>
+            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <h3 class="fetures__header">Заводит новых друзей</h3>
+            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img class="features__image" src="#" height="245" width="136" alt="Изображение с надписью 'Всем привет!'">
+      </section>
+
+      <section class="comments">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <div class="comments__slider"> <!--плюс кнопки слайдов в этом блоке-->
+
+          <div class="comments__list">
+            <blockquote class="comments__list-item">
+              <cite class="comments__list-user">Николай Петров</cite>
+              <!--<p class="comments__list-profession">25 лет, водитель трамвая</p>-->
+              <p class="comments__list-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </div>
+          <div class="comments__controls">
+            <button class="comments__controls-button--current" type="button" aria-label="Первый слайд"></button>
+            <button class="comments__controls-button" type="button" aria-label="Второй слайд"></button>
+            <button class="comments__controls-button" type="button" aria-label="Третий слайд"></button>
+          </div>
+
+
+        </div><!--плюс кнопки слайдов в этом блоке конец-->
+
+      </section>
+
+
+      <section class="prices">
+        <h2 class="visually-hidden">Таблица расценок</h2>
+        <div class="prices__wrapper">
+          <table class="prices__table">
+            <thead>
+              <tr>
+                <th class="prices__table-title prices__table-title--invisible prices__hidden-cell"></th><!-- class="prices__hidden-cell" -->
+                <th class="prices__table-title prices__table-title--grey-border">База<p>1,99 USD</p></th>
+                <th class="prices__table-title prices__table-title--grey-border">Стандарт<p>3,99 USD</p></th>
+                <th class="prices__table-title">Анлим<p>9,99 USD</p></th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr class="prices__table-row">
+                <td class="prices__table-cell prices__table-cell--width prices__hidden-cell">Розовый фильтр</td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+              </tr>
+              <tr class="prices__table-row">
+                <td class="prices__table-cell prices__hidden-cell">Смайлики</td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/no.svg" width="27" height="27" alt="крестик"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+              </tr>
+              <tr class="prices__table-row">
+                <td class="prices__table-cell prices__hidden-cell">Комментарии</td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/no.svg" width="27" height="27" alt="крестик"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/no.svg" width="27" height="27" alt="крестик"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <div class="prices__controls">
+            <button class="prices__controls-button--current" type="button" aria-label="Первый слайд"></button>
+            <button class="prices__controls-button" type="button" aria-label="Второй слайд"></button>
+            <button class="prices__controls-button" type="button" aria-label="Третий слайд"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-information">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <p class="contact-information__questions">Остались вопросы?<br>Свяжитесь с нами!</p>
+
+        <address class="address">
+
+          <div class="address__ring">
+            <p>Звоните:</p>
+            <p class="address__phone"><a href="tel:+78125556666">+7 (812)555-66-66</a></p>
+          </div>
+
+          <div class="address__write">
+            <p>Пишите:</p>
+            <p class="address__mail-address"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          </div>
+
+          <div class="address__postal">
+            <p>Приезжайте в гости:</p>
+            <span class="address__post-address">ул. Большая Конюшенная, 19/8</span>
+          </div>
+        </address>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">PINK на карте города</h2>
+        <div class="map__wrapper">
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619247477040!5m2!1sru!2sru" width="400" height="300" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logotype-blue-tablet.svg" width="145" height="40" alt="логотип компании PINK">
+        </div>
+
+        <div class="page-footer__social">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/pink" target="_blank"><span class="visually-hidden">Вконтакте</span>
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                  <path d="M29.5641 20.1689C30.2458 19.9538 30.9837 19.9439 31.6719 20.1405C32.3602 20.3371 32.9633 20.7301 33.3947 21.2632C34.1053 21.0538 34.8055 20.816 35.5263 20.6066C35.5164 20.9258 35.4299 21.2391 35.2732 21.5237C35.1165 21.8084 34.8935 22.0574 34.6201 22.2528C34.8726 22.2788 35.1281 22.2511 35.3673 22.172C35.6064 22.0928 35.8228 21.9642 36 21.7961C35.901 22.2099 35.6999 22.597 35.4123 22.9271C35.1247 23.2572 34.7585 23.5214 34.3421 23.6992C34.095 29.9699 30.9748 34.1662 23.6533 33.9949H23.1487C22.7059 33.9949 18.7311 33.5667 18 32.2441C19.752 32.4899 21.5389 32.0976 22.984 31.1498C21.9542 30.8643 20.1316 30.7026 19.8227 28.4093C20.2108 28.5434 20.6321 28.5731 21.0378 28.495C19.7609 27.7052 18.3398 27.0391 18.4222 24.9933C18.8196 25.2988 19.3269 25.4551 19.8432 25.431C19.1018 25.2026 17.7529 22.3099 18.8959 20.8255C20.8215 22.5478 22.8604 24.1749 26.4851 24.3367C26.7117 22.2052 27.6899 20.7779 29.5641 20.1689Z" fill="#D22856"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--facebook" href="https://facebook.com/pink" target="_blank">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                  <path d="M29.5087 21.1932H32V18H29.0208C25.7612 18.1711 24.5986 20.2714 25.0761 23.8163H23V27.1521H25.0761V36H29.0208V27.1521H31.9792V23.8163H29.0104C28.9896 22.8184 28.9689 21.5259 29.5087 21.1932Z" fill="#D22856"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--youtube" href="https://youtube.com/pink" target="_blank">
+              <span class="visually-hidden">Ютуб</span>
+              <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                <path d="M23.8336 33.8089C23.6463 33.9278 23.4247 33.9941 23.1963 33.9996C22.9678 34.0051 22.7426 33.9495 22.5487 33.8398C22.3548 33.7301 22.2007 33.571 22.1056 33.3824C22.0106 33.1938 21.9787 32.984 22.014 32.779V22.221C21.9787 22.016 22.0106 21.8062 22.1056 21.6176C22.2007 21.429 22.3548 21.2699 22.5487 21.1602C22.7426 21.0505 22.9678 20.9949 23.1963 21.0004C23.4247 21.0059 23.6463 21.0722 23.8336 21.1911L36.2333 26.6928C37.2556 27.1382 37.2556 27.8618 36.2333 28.3072L23.8336 33.8089Z" fill="#D22856"/>
+              </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/html-academy.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
