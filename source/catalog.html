@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+    <style>
+      .page-header {
+        background-color: #000000;
+      }
+      .form__background-grey {
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+
+        <!--цетровщик здесь начало-->
+        <div class="logo-container">
+          <a class="logo-container__logo" href="#">
+            <img class="logo-container__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип PINK">
+          </a>
+          <button class="logo-container__nav-close">
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
+          <button class="logo-container__nav-open">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
+            <li class="main-nav__item "><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+          </ul>
+        </nav>
+
+        <h1 class="header__title">Фотографии пользователей</h1>
+
+        <!--центровщик здесь конец-->
+
+    </header>
+
+    <main class="main">
+
+      <section class="invitation">
+        <h2 class="visually-hidden">Заголовок блока-приглашения</h2>
+        <p class="invitation__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </section>
+
+      <section class="panorama-container"><!--решил сделать панораму дня как background-->
+        <h2 class="visually-hidden">Главная панорама на сайте сегодня</h2>
+        <div class="panorama-container__label">
+          <span class="panorama-container__tittle">Панорама дня</span>
+        </div>
+      </section>
+
+      <blockquote class="day-block">
+        <cite class="day-block__name">Анна<span class="day-block__time"> (5 минут назад)</span></cite>
+        <p class="day-block__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+        <p class="day-block__like">
+          <span class="day-block__icon"></span>нравится:<span class="day-block__count">215</span>
+        </p>
+      </blockquote>
+
+      <section class="user-photos">
+        <h2 class="visually-hidden">Альбом пользовательских фотографий</h2>
+        <ul class="user-photos__list">
+          <li class="user-photos__item">
+            <img src="img/photo-1-mobile.jpg" width="280" height="180" alt="Фотография камеры на подставке на переднем плане и белого автомобиля на заднем">
+            <blockquote class="user-photos__block user-block">
+              <cite class="user-block__name">Левон<span class="user-block__time"> (5 часов назад)</span></cite>
+              <p class="user-block__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">356</span></p>
+            </blockquote>
+          </li>
+          <li class="user-photos__item">
+            <img src="img/photo-2-mobile.jpg" width="280" height="180" alt="Фотография барабанной установки.">
+            <blockquote class="user-photos__block user-block">
+              <cite class="user-block__name">Антон<span class="user-block__time"> (12 часов назад)</span></cite>
+              <p class="user-block__description">Соседи будут рады!</p>
+              <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">988</span></p>
+            </blockquote>
+          </li>
+          <li class="user-photos__item">
+            <img src="img/photo-3-mobile.jpg" width="280" height="180" alt="Вид на небоскеб снизу.">
+            <blockquote class="custom-photos__block user-block">
+              <cite class="user-block__name">Борис<span class="user-block__time"> (20 часов назад)</span></cite>
+              <p class="user-block__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">215</span></p>
+            </blockquote>
+          </li>
+          <li class="user-photos__item">
+            <img src="img/photo-4-mobile.jpg" width="280" height="180" alt="Кубанская бахча.">
+            <blockquote class="custom-photos__block user-block">
+              <cite class="user-block__name">Сергейс<span class="user-block__time">(25 часов назад)</span></cite>
+              <p class="user-block__description">Самая кубанская в мире!</p>
+              <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">4</span></p>
+            </blockquote>
+          </li>
+          <li class="user-photos__item">
+            <img src="img/photo-5-mobile.jpg" width="280" height="180" alt="Вид с обрыва сверху вниз.">
+            <blockquote class="custom-photos__block user-block">
+              <cite class="user-block__name">Максим<span class="user-block__time">(40 часов назад)</span></cite>
+              <p class="user-block__description">Где снег-то?</p>
+              <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">150</span></p>
+            </blockquote>
+          </li>
+          <li class="user-photos__item">
+            <img src="img/photo-6-mobile.jpg" width="280" height="180" alt="Вид на крыло самолета">
+            <blockquote class="custom-photos__block user-block">
+              <cite class="user-block__name">Всем GM и взаимные лайки!<span class="user-block__time">(45 часов назад)</span></cite>
+              <p class="user-block__description">Где снег-то?</p>
+              <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">2560</span></p>
+            </blockquote>
+          </li>
+        </ul>
+      </section>
+
+
+
+      <section class="post-photos__wrapper">
+        <h2 class="visually-hidden">Разместите ваше фото здесь</h2>
+        <p class="post-photo__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+      </section>
+
+      <section class="photo-editor"><!--у этой секции должен быть сереый фон, не может быть центровщиком.-->
+        <h2 class="visually-hidden">Редактор фотографий</h2>
+
+        <div class="photo-editor__image-container">
+          <img class="photo-editor__image" src="img/upload-mobile.jpg" width="280" height="374" alt="Образец фото">
+        </div>
+
+        <div class="photo-editor__customization">
+
+          <div class="customization__range-container">
+            <span class="customization__item cut-tool">
+              <img src="img/crop.svg" width="44" height="44" alt="функция обрезки изображения">
+            </span>
+            <input class="customization__range" type="range" min="0" max="100" step="1" value="80">
+
+          </div>
+
+          <div class="customization__range-container">
+            <span class="customization__item color-tool">
+              <img src="img/fill.svg" width="48" height="43" alt="функция наполнить цветом">
+            </span>
+            <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="60">
+          </div>
+
+
+          <div class="customization__range-container">
+            <span class="customization__item brightness-tool">
+              <img src="img/contrast.svg" width="32" height="32" alt="функция установить яркость">
+            </span>
+            <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="40">
+          </div>
+
+        </div>
+
+      </section>
+
+      <div class=""><!--вспомогательный блок. Его верхний бордер будет как тег hr по макету-->
+        <div class="customization-buttons"><!--Этому блоку нужен цетровщик-->
+          <button class="customization__buttons-send" type="button" aria-label="Отправить">Запостить</button>
+          <button class="customization__buttons-cancel" type="button" aria-label="Отменить">Отмена</button>
+        </div>
+      </div>
+
+
+
+    </main>
+
+
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logotype-blue-tablet.svg" width="145" height="40" alt="логотип компании PINK">
+        </div>
+
+        <div class="page-footer__social">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/pink" target="_blank"><span class="visually-hidden">Вконтакте</span>
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                  <path d="M29.5641 20.1689C30.2458 19.9538 30.9837 19.9439 31.6719 20.1405C32.3602 20.3371 32.9633 20.7301 33.3947 21.2632C34.1053 21.0538 34.8055 20.816 35.5263 20.6066C35.5164 20.9258 35.4299 21.2391 35.2732 21.5237C35.1165 21.8084 34.8935 22.0574 34.6201 22.2528C34.8726 22.2788 35.1281 22.2511 35.3673 22.172C35.6064 22.0928 35.8228 21.9642 36 21.7961C35.901 22.2099 35.6999 22.597 35.4123 22.9271C35.1247 23.2572 34.7585 23.5214 34.3421 23.6992C34.095 29.9699 30.9748 34.1662 23.6533 33.9949H23.1487C22.7059 33.9949 18.7311 33.5667 18 32.2441C19.752 32.4899 21.5389 32.0976 22.984 31.1498C21.9542 30.8643 20.1316 30.7026 19.8227 28.4093C20.2108 28.5434 20.6321 28.5731 21.0378 28.495C19.7609 27.7052 18.3398 27.0391 18.4222 24.9933C18.8196 25.2988 19.3269 25.4551 19.8432 25.431C19.1018 25.2026 17.7529 22.3099 18.8959 20.8255C20.8215 22.5478 22.8604 24.1749 26.4851 24.3367C26.7117 22.2052 27.6899 20.7779 29.5641 20.1689Z" fill="#D22856"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--facebook" href="https://facebook.com/pink" target="_blank">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                  <path d="M29.5087 21.1932H32V18H29.0208C25.7612 18.1711 24.5986 20.2714 25.0761 23.8163H23V27.1521H25.0761V36H29.0208V27.1521H31.9792V23.8163H29.0104C28.9896 22.8184 28.9689 21.5259 29.5087 21.1932Z" fill="#D22856"/>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--youtube" href="https://youtube.com/pink" target="_blank">
+              <span class="visually-hidden">Ютуб</span>
+              <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                <path d="M23.8336 33.8089C23.6463 33.9278 23.4247 33.9941 23.1963 33.9996C22.9678 34.0051 22.7426 33.9495 22.5487 33.8398C22.3548 33.7301 22.2007 33.571 22.1056 33.3824C22.0106 33.1938 21.9787 32.984 22.014 32.779V22.221C21.9787 22.016 22.0106 21.8062 22.1056 21.6176C22.2007 21.429 22.3548 21.2699 22.5487 21.1602C22.7426 21.0505 22.9678 20.9949 23.1963 21.0004C23.4247 21.0059 23.6463 21.0722 23.8336 21.1911L36.2333 26.6928C37.2556 27.1382 37.2556 27.8618 36.2333 28.3072L23.8336 33.8089Z" fill="#D22856"/>
+              </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/html-academy.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
