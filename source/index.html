@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/192.svg" type="image/svg+xml">
@@ -11,37 +12,37 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="background-wrapper"><!--контейнер для руки начало-->
+      <div class="background-wrapper"><!--контейнер для руки мобильной начало-->
         <!--цетровщик здесь начало-->
-        <div class="logo-container">
-          <a class="logo-container__logo" href="#">
-            <img class="logo-container__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип PINK">
-          </a>
-          <button class="logo-container__nav-close">
-            <span class="visually-hidden">Закрыть меню</span>
-          </button>
-          <button class="logo-container__nav-open">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
+        <!-- <div class="positioner"> -->
+          <div class="page-header__navigation page-header__navigation--nojs">
+            <div class="logo-container positioner">
+              <a class="logo-container__logo" href="#">
+                <img class="logo-container__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип PINK">
+              </a>
+              <button class="logo-container__nav-close">
+                <span class="visually-hidden">Закрыть меню</span>
+              </button>
+              <button class="logo-container__nav-open visually-hidden">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+                <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
+                <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+                <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+              </ul>
+            </nav>
+          </div>
+          <h1 class="header__title">Взгляните на жизнь иначе!</h1>
+      <!-- </div> центровщик здесь конец -->
+      </div><!--контейнер для руки мобильнойконец-->
 
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
-          </ul>
-        </nav>
-
-        <h1 class="header__title">Взгляните на жизнь иначе!</h1>
-
-        <!--центровщик здесь конец-->
-      </div><!--контейнер для руки конец-->
 
 
-
-      <div class="differently">
+      <div class="differently positioner">
         <button class="differently__button">Скачать приложение</button>
         <ul class="differently__applications">
           <li class="differently__applications-item"><a class="differently__applications-apple" href="#">
@@ -62,27 +63,38 @@
 
     <main class="main">
       <section class="features">
-        <h2 class="visually-hidden">Особенности приложения PINK </h2>
-        <p class="features__content">Устали от серости мегаполиса?</p>
-        <p class="features__content">Нам есть, что вам предложить!</p>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="fetures__header">Поднимает настроение</h3>
-            <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="features__item">
-            <h3 class="fetures__header">Меняет мир вокруг</h3>
-            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="features__item">
-            <h3 class="fetures__header">Заводит новых друзей</h3>
-            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <img class="features__image" src="img/iphone-mobile.svg" height="245" width="136" alt="Изображение с надписью 'Всем привет!'">
+        <div class="positioner">
+          <h2 class="visually-hidden">Особенности приложения PINK </h2>
+          <p class="features__content">Устали от серости мегаполиса?</p>
+          <p class="features__content">Нам есть, что вам предложить!</p>
+
+          <div class="features__image-container-general"> <!--контейнер для планшетной версии-->
+            <img class="features__image--general" src="img/iphone-tablet-1.png" height="482" width="268" alt="Изображение с надписью 'Всем привет!'">
+            <ul class="features__list">
+              <li class="features__item">
+                <img class="features__image-hidden" src="img/image-hidden-first-1.png" height="300" width="308" alt="Изображение Заводит новых друзей">
+                <h3 class="fetures__header">Поднимает настроение</h3>
+                <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="features__item">
+                <img class="features__image-hidden" src="img/image-hidden-second-1.png" height="300" width="308" alt="Изображение Заводит новых друзей">
+                <h3 class="fetures__header">Меняет мир вокруг</h3>
+                <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="features__item">
+                <img class="features__image-hidden" src="img/image-hidden-third-1.png" height="300" width="308" alt="Изображение Заводит новых друзей">
+                <h3 class="fetures__header">Заводит новых друзей</h3>
+                <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
+
+
+          <img class="features__image" src="img/iphone-mobile.png" height="280" width="157" alt="Изображение с надписью 'Всем привет!'">
+        </div><!--positioner-->
       </section>
 
-      <section class="comments">
+      <section class="comments positioner">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
         <div class="comments__slider"> <!--плюс кнопки слайдов в этом блоке-->
 
@@ -149,7 +161,7 @@
         </div>
       </section>
 
-      <section class="contact-information">
+      <section class="contact-information positioner">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="contact-information__questions">Остались вопросы?<br>Свяжитесь с нами!</p>
 
@@ -171,7 +183,8 @@
           </div>
         </address>
       </section>
-
+      <div class="triangle-footer"><!--контейнер для фона сделанного треугольником-->
+      </div>
       <section class="map">
         <h2 class="visually-hidden">PINK на карте города</h2>
         <div class="map__wrapper">
@@ -182,7 +195,7 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer positioner">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <img src="img/logotype-blue-tablet.svg" width="145" height="40" alt="логотип компании PINK">

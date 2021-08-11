@@ -1,9 +1,53 @@
+.features {
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+  background-image: url("../../img/grey-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/grey-background-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/grey-background-desktop.jpg");
+  }
+}
+
 .features__content {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
   color: #283645;
+  margin-top: 0;
+}
+
+.features__image-container-general {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.features__image--general {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .features__list {
@@ -26,4 +70,28 @@
   line-height: 24px;
   text-align: center;
   color: @basic-font;
+}
+
+.features__image {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.features__image-hidden {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
