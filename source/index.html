@@ -46,11 +46,182 @@
       </div><!--page-header__adaptive-container-->
 
 
-      <div class="page-header__background-wrapper">
+      <!-- <div class="page-header__background-wrapper">
 
+      </div> -->
+      <h1 class="page-header__title">Взгляните на жизнь иначе!</h1>
+      <div class="page-header__hand-background-container">
+        <!-- этот блок только для мобильной версии, в нем рука. -->
       </div>
+
+      <div class="differently">
+        <div class="positioner">
+          <button class="differently__button">Скачать приложение</button>
+          <div class="differently__applications">
+            <a class="differently__applications-apple" href="#">
+              <img src="img/apple-logo.svg" width="47" height="56" alt="лого для apple приложений">
+            </a>
+            <a class="differently__applications-android" href="#">
+              <img src="img/android-logo.svg" width="47" height="56" alt="лого для android приложений">
+            </a>
+            <a class="differently__applications-windows" href="#">
+              <img src="img/microsoft-logo.svg" width="47" height="56" alt="лого для windows приложений">
+            </a>
+          </div>
+          <p class="differently__description"> Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+
     </header>
 
+    <main class="main">
+      <section class="features">
+        <div class="positioner">
+          <h2 class="visually-hidden">Особенности приложения PINK </h2>
+          <p class="features__content">Устали от серости мегаполиса?</p>
+          <p class="features__content">Нам есть, что вам предложить!</p>
+
+          <div class="features__image-container-general"> <!--контейнер для планшетной версии-->
+            <img class="features__image--general" src="img/iphone-tablet-1.png" height="482" width="268" alt="Изображение с надписью 'Всем привет!'">
+            <ul class="features__list">
+              <li class="features__item">
+                <img class="features__image-hidden" src="img/image-hidden-first-1.png" height="300" width="308" alt="Изображение Поднимает настроение">
+                <h3 class="fetures__header">Поднимает настроение</h3>
+                <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="features__item">
+                <img class="features__image-hidden" src="img/image-hidden-second-1.png" height="300" width="308" alt="Изображение Меняет мир вокруг">
+                <h3 class="fetures__header">Меняет мир вокруг</h3>
+                <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="features__item">
+                <img class="features__image-hidden" src="img/image-hidden-third-1.png" height="300" width="308" alt="Изображение Заводит новых друзей">
+                <h3 class="fetures__header">Заводит новых друзей</h3>
+                <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
+
+
+          <img class="features__image" src="img/iphone-mobile.png" height="280" width="157" alt="Изображение с надписью 'Всем привет!'">
+        </div><!--positioner-->
+      </section>
+
+
+      <section class="effect">
+        <div class="effect__container positioner">
+          <div class="effect__container__right">
+            <h3 class="effect__container__title">Эффект на 24 часа!</h3>
+            <p class="effect__container__content">Британские ученые провели исследования и доказали,
+              что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="effect__container__link" href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="comments positioner">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <div class="comments__slider"> <!--плюс кнопки слайдов в этом блоке-->
+
+          <div class="comments__list">
+            <blockquote class="comments__list-item">
+              <cite class="comments__list-user">Николай Петров</cite>
+              <!--<p class="comments__list-profession">25 лет, водитель трамвая</p>-->
+              <p class="comments__list-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </div>
+          <div class="comments__controls">
+            <button class="comments__controls-button comments__controls-button--current" type="button" aria-label="Первый слайд"></button>
+            <button class="comments__controls-button" type="button" aria-label="Второй слайд"></button>
+            <button class="comments__controls-button" type="button" aria-label="Третий слайд"></button>
+          </div>
+
+
+        </div><!--плюс кнопки слайдов в этом блоке конец-->
+
+      </section>
+
+
+      <section class="prices">
+        <h2 class="visually-hidden">Таблица расценок</h2>
+        <div class="prices__wrapper">
+          <table class="prices__table">
+            <thead>
+              <tr>
+                <th class="prices__table-title prices__table-title--invisible prices__hidden-cell"></th><!-- class="prices__hidden-cell" -->
+                <th class="prices__table-title prices__table-title--grey-border">База<p>1,99 USD</p></th>
+                <th class="prices__table-title prices__table-title--grey-border">Стандарт<p>3,99 USD</p></th>
+                <th class="prices__table-title">Анлим<p>9,99 USD</p></th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr class="prices__table-row">
+                <td class="prices__table-cell prices__table-cell--width prices__hidden-cell">Розовый фильтр</td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+              </tr>
+              <tr class="prices__table-row">
+                <td class="prices__table-cell prices__hidden-cell">Смайлики</td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/no.svg" width="27" height="27" alt="крестик"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+              </tr>
+              <tr class="prices__table-row">
+                <td class="prices__table-cell prices__hidden-cell">Комментарии</td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/no.svg" width="27" height="27" alt="крестик"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/no.svg" width="27" height="27" alt="крестик"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <div class="prices__controls">
+            <button class="prices__controls-button prices__controls-button--current" type="button" aria-label="Первый слайд"></button>
+            <button class="prices__controls-button" type="button" aria-label="Второй слайд"></button>
+            <button class="prices__controls-button" type="button" aria-label="Третий слайд"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-information positioner">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <p class="contact-information__questions">Остались вопросы?<br>Свяжитесь с нами!</p>
+
+        <address class="address">
+
+          <div class="address__ring">
+            <p class="address__ring-title">Звоните:</p>
+            <p class="address__phone"><a href="tel:+78125556666">+7 (812)555-66-66</a></p>
+          </div>
+
+          <div class="address__write">
+            <p class="address__ring-title">Пишите:</p>
+            <p class="address__mail-address"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+          </div>
+
+          <div class="address__postal">
+            <p class="address__ring-title">Приезжайте в гости:</p>
+            <span class="address__post-address">ул. Большая Конюшенная, 19/8</span>
+          </div>
+        </address>
+      </section>
+      <div class="triangle-footer"><!--контейнер для фона сделанного треугольником-->
+      </div>
+      <section class="map">
+        <h2 class="visually-hidden">PINK на карте города</h2>
+        <div class="map__wrapper">
+          <iframe class="map__iframe"
+           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619247477040!5m2!1sru!2sru"
+            min-width="320" height="300" style="border: 0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </section>
+
+
+    </main>
 
 
     <footer class="page-footer positioner">
