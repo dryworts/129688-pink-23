@@ -22,11 +22,21 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
+    background-color: transparent;
   }
 }
-
+// китрый блок, эти св-ва нужны, чтобы находясь в таблетке, при увеличении до десктопа, меню отображалось.
 .main-nav__list--closed {
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+  }
 }
 
 
@@ -43,11 +53,11 @@
   padding-bottom: 25px;
   text-transform: uppercase;
 
-  // @media (min-width: @desktop-width) {
-  //     margin-left: 78px;
-  //     box-shadow: unset;
-
-  // }
+  @media (min-width: @desktop-width) {
+    margin-left: 78px;
+    box-shadow: unset;
+    background-color: transparent;
+  }
 }
 
 .main-nav__item a {
