@@ -12,11 +12,13 @@
   </head>
   <body class="page__body">
     <header class="page-header">
+      <!-- page-header__adaptive-container для десктропной версии, все в одной  строке -->
+      <div class="page-header__adaptive-container">
 
 
-      <div class="page-header__new-stripe">
 
-          <div class="page-header__navigation-container">
+        <div class="page-header__nav-stripe page-header__nav-stripe--closed">
+          <div class="page-header__nav-stripe__container">
 
             <div class="logo-container">
               <a class="logo-container__logo" href="#">
@@ -30,36 +32,23 @@
               </button>
             </div>
 
-
-            <nav class="main-nav">
-              <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-                <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
-                <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-                <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
-              </ul>
-            </nav>
-
           </div>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+          </ul>
+        </nav>
+
+      </div><!--page-header__adaptive-container-->
 
 
+      <!-- <div class="page-header__background-wrapper">
 
-
-
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+      </div> -->
       <h1 class="page-header__title">Взгляните на жизнь иначе!</h1>
       <div class="page-header__hand-background-container">
         <!-- этот блок только для мобильной версии, в нем рука. -->

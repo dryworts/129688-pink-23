@@ -1,13 +1,5 @@
 .page-header {
-  // min-width: 320px;
-  // min-height: 733px;
-  // background-image: url("../img/hand-phone-mobile.png"), url("../img/back-mobile.jpg");
-  // background-repeat: no-repeat, no-repeat;
-  // background-size: auto, cover;
-  // background-position: left bottom, 0 0;
-  // width: 100%;
   min-width: 320px;
-  // min-height: 733px;
   background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,23 +25,14 @@
   }
 }
 
-.page-header__nav-stripe {
-  min-height: 66px;
-  background: rgba(0, 0, 0, 0.3);
+// .page-header__nav-stripe {
+//   min-height: 66px;
+//   background: rgba(0, 0, 0, 0.3);
 
-  @media (min-width: @desktop-width) {
-    background-color: transparent;
-  }
-}
-
-.page-header__nav-stripe--closed {
-  // background: rgba(30, 153, 18, 0.3);
-  background: @basic-font;
-
-  @media (min-width: @desktop-width) {
-    background-color: transparent;
-  }
-}
+//   @media (min-width: @desktop-width) {
+//     background-color: transparent;
+//   }
+// }
 
 .page-header__background-wrapper {
   outline: 3px solid rgba(255, 255, 0, 0.7);
@@ -137,5 +120,37 @@
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+//пробы
+.page-header__navigation-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 130px;
+    outline: 3px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -3px;
+  }
+}
+
+.page-header__new-stripe {
+  background-color: @basic-font;
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+// .page-header__nav-stripe--closed
+.page-header__new-stripe--closed {
+  // background: rgba(30, 153, 18, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+
+  @media (min-width: @desktop-width) {
+    background-color: transparent;
   }
 }
