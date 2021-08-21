@@ -11,47 +11,64 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header form-header">
 
-        <!--цетровщик здесь начало-->
-        <div class="logo-container">
-          <a class="logo-container__logo" href="#">
-            <img class="logo-container__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип PINK">
-          </a>
-          <button class="logo-container__nav-close">
-            <span class="visually-hidden">Закрыть меню</span>
-          </button>
-          <button class="logo-container__nav-open">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
 
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
-            <li class="main-nav__item "><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
-          </ul>
-        </nav>
+      <div class="page-header__new-stripe">
 
-        <h1 class="header__title">Фотографии пользователей</h1>
+          <div class="page-header__navigation-container">
 
-        <!--центровщик здесь конец-->
+            <div class="logo-container">
+              <a class="logo-container__logo" href="index.html">
+                <img class="logo-container__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип PINK">
+              </a>
+              <button class="logo-container__nav-close">
+                <span class="visually-hidden">Закрыть меню</span>
+              </button>
+              <button class="logo-container__nav-open visually-hidden">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>
+
+
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                <li class="main-nav__item"><a href="#">Фотографии</a></li>
+                <li class="main-nav__item main-nav__item--active"><a href="form.html">Конкурс</a></li>
+                <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+              </ul>
+            </nav>
+
+          </div>
+
+
+
+
+
+      </div>
+
+
+
+
+      <h1 class="page-header__catalog-title positioner">Фотографии пользователей</h1>
+
 
     </header>
 
     <main class="main">
 
-      <section class="invitation">
+      <section class="invitation positioner">
         <h2 class="visually-hidden">Заголовок блока-приглашения</h2>
         <p class="invitation__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </section>
 
       <section class="panorama-container"><!--решил сделать панораму дня как background-->
         <h2 class="visually-hidden">Главная панорама на сайте сегодня</h2>
-        <div class="panorama-container__label">
-          <span class="panorama-container__tittle">Панорама дня</span>
+        <div class="panorama-container__label-positioner">
+          <div class="panorama-container__label">
+            <span class="panorama-container__tittle">Панорама дня</span>
+          </div>
         </div>
       </section>
 
@@ -228,6 +245,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/app.js"></script>
   </body>
 </html>
