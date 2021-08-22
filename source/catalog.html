@@ -80,7 +80,7 @@
         </p>
       </blockquote>
 
-      <section class="user-photos">
+      <section class="user-photos positioner">
         <h2 class="visually-hidden">Альбом пользовательских фотографий</h2>
         <ul class="user-photos__list">
           <li class="user-photos__item">
@@ -155,46 +155,54 @@
 
       <section class="photo-editor"><!--у этой секции должен быть сереый фон, не может быть центровщиком.-->
         <h2 class="visually-hidden">Редактор фотографий</h2>
+        <div class="positioner">
 
-        <div class="photo-editor__image-container">
-          <img class="photo-editor__image" src="img/upload-mobile.jpg" width="280" height="374" alt="Образец фото">
-        </div>
+          <div class="photo-editor__image-container">
+            <img class="photo-editor__image" src="img/upload-mobile.jpg" width="280" height="374" alt="Образец фото">
+          </div>
 
-        <div class="photo-editor__customization customization">
+          <div class="photo-editor__customization customization">
 
-          <div class="customization__range-container">
-            <span class="customization__item cut-tool">
-              <img src="img/crop.svg" width="44" height="44" alt="функция обрезки изображения">
-            </span>
-            <input class="customization__range" type="range" min="0" max="100" step="1" value="80">
+            <div class="customization__range-container">
+              <span class="customization__item cut-tool">
+                <img src="img/crop.svg" width="44" height="44" alt="функция обрезки изображения">
+              </span>
+              <input class="customization__range" type="range" min="0" max="100" step="1" value="80">
+
+            </div>
+
+            <div class="customization__range-container">
+              <span class="customization__item color-tool">
+                <img src="img/fill.svg" width="48" height="43" alt="функция наполнить цветом">
+              </span>
+              <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="60">
+            </div>
+
+
+            <div class="customization__range-container">
+              <span class="customization__item brightness-tool">
+                <img src="img/contrast.svg" width="32" height="32" alt="функция установить яркость">
+              </span>
+              <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="40">
+            </div>
 
           </div>
 
-          <div class="customization__range-container">
-            <span class="customization__item color-tool">
-              <img src="img/fill.svg" width="48" height="43" alt="функция наполнить цветом">
-            </span>
-            <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="60">
+
+          <div class=""><!--вспомогательный блок. Его верхний бордер будет как тег hr по макету-->
+            <div class="customization-buttons"><!--Этому блоку нужен цетровщик-->
+              <button class="customization__buttons-send" type="button" aria-label="Отправить">Запостить</button>
+              <button class="customization__buttons-cancel" type="button" aria-label="Отменить">Отмена</button>
+            </div>
           </div>
+        </div><!--positioner-->
 
 
-          <div class="customization__range-container">
-            <span class="customization__item brightness-tool">
-              <img src="img/contrast.svg" width="32" height="32" alt="функция установить яркость">
-            </span>
-            <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="40">
-          </div>
 
-        </div>
 
       </section>
 
-      <div class=""><!--вспомогательный блок. Его верхний бордер будет как тег hr по макету-->
-        <div class="customization-buttons"><!--Этому блоку нужен цетровщик-->
-          <button class="customization__buttons-send" type="button" aria-label="Отправить">Запостить</button>
-          <button class="customization__buttons-cancel" type="button" aria-label="Отменить">Отмена</button>
-        </div>
-      </div>
+
 
 
 
