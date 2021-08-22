@@ -105,7 +105,7 @@
           </li>
           <li class="user-photos__item">
             <img src="img/photo-3-mobile.jpg" width="280" height="180" alt="Вид на небоскеб снизу.">
-            <blockquote class="custom-photos__block user-block">
+            <blockquote class="user-photos__block user-block">
               <cite class="user-block__name">Борис<span class="user-block__time"> (20 часов назад)</span></cite>
               <p class="user-block__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <p class="user-block__like">
@@ -115,8 +115,8 @@
           </li>
           <li class="user-photos__item">
             <img src="img/photo-4-mobile.jpg" width="280" height="180" alt="Кубанская бахча.">
-            <blockquote class="custom-photos__block user-block">
-              <cite class="user-block__name">Сергейс<span class="user-block__time">(25 часов назад)</span></cite>
+            <blockquote class="user-photos__block user-block">
+              <cite class="user-block__name">Сергей<span class="user-block__time">(25 часов назад)</span></cite>
               <p class="user-block__description">Самая кубанская в мире!</p>
               <p class="user-block__like">
                 <img class="day-block__icon"  src="img/heart.svg" width="13" height="12" alt="Сердечко">
@@ -125,7 +125,7 @@
           </li>
           <li class="user-photos__item">
             <img src="img/photo-5-mobile.jpg" width="280" height="180" alt="Вид с обрыва сверху вниз.">
-            <blockquote class="custom-photos__block user-block">
+            <blockquote class="user-photos__block user-block">
               <cite class="user-block__name">Максим<span class="user-block__time">(40 часов назад)</span></cite>
               <p class="user-block__description">Где снег-то?</p>
               <p class="user-block__like">
@@ -135,7 +135,7 @@
           </li>
           <li class="user-photos__item">
             <img src="img/photo-6-mobile.jpg" width="280" height="180" alt="Вид на крыло самолета">
-            <blockquote class="custom-photos__block user-block">
+            <blockquote class="user-photos__block user-block">
               <cite class="user-block__name">Надежда<span class="user-block__time">(45 часов назад)</span></cite>
               <p class="user-block__description">Всем GM и взаимные лайки!</p>
               <p class="user-block__like">
@@ -156,37 +156,37 @@
       <section class="photo-editor"><!--у этой секции должен быть сереый фон, не может быть центровщиком.-->
         <h2 class="visually-hidden">Редактор фотографий</h2>
         <div class="positioner">
+          <div class="photo-editor__common-container">
 
-          <div class="photo-editor__image-container">
-            <img class="photo-editor__image" src="img/upload-mobile.jpg" width="280" height="374" alt="Образец фото">
+            <div class="photo-editor__image-container">
+              <img class="photo-editor__image" src="img/upload-mobile.jpg" width="280" height="374" alt="Образец фото">
+            </div>
+            <div class="photo-editor__customization customization">
+
+              <div class="customization__range-container">
+                <span class="customization__item cut-tool">
+                  <img src="img/crop.svg" width="44" height="44" alt="функция обрезки изображения">
+                </span>
+                <input class="customization__range" type="range" min="0" max="100" step="1" value="80">
+
+              </div>
+              <div class="customization__range-container">
+                <span class="customization__item color-tool">
+                  <img src="img/fill.svg" width="48" height="43" alt="функция наполнить цветом">
+                </span>
+                <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="60">
+              </div>
+              <div class="customization__range-container">
+                <span class="customization__item brightness-tool">
+                  <img src="img/contrast.svg" width="32" height="32" alt="функция установить яркость">
+                </span>
+                <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="40">
+              </div>
+
+            </div>
+            <input class="customization__range-common" type="range" min="0" max="100" step="1" value="80">
           </div>
 
-          <div class="photo-editor__customization customization">
-
-            <div class="customization__range-container">
-              <span class="customization__item cut-tool">
-                <img src="img/crop.svg" width="44" height="44" alt="функция обрезки изображения">
-              </span>
-              <input class="customization__range" type="range" min="0" max="100" step="1" value="80">
-
-            </div>
-
-            <div class="customization__range-container">
-              <span class="customization__item color-tool">
-                <img src="img/fill.svg" width="48" height="43" alt="функция наполнить цветом">
-              </span>
-              <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="60">
-            </div>
-
-
-            <div class="customization__range-container">
-              <span class="customization__item brightness-tool">
-                <img src="img/contrast.svg" width="32" height="32" alt="функция установить яркость">
-              </span>
-              <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="40">
-            </div>
-
-          </div>
 
 
           <div class=""><!--вспомогательный блок. Его верхний бордер будет как тег hr по макету-->
@@ -195,6 +195,7 @@
               <button class="customization__buttons-cancel" type="button" aria-label="Отменить">Отмена</button>
             </div>
           </div>
+
         </div><!--positioner-->
 
 
