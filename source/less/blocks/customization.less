@@ -1,3 +1,25 @@
+.customization__range {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
+}
+
+.customization__range-common {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .customization__buttons-send {
   border: 3px solid @pink;
   border-radius: 30px;

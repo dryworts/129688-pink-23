@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/192.svg" type="image/svg+xml">
@@ -10,51 +11,68 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header form-header">
 
-        <!--цетровщик здесь начало-->
-        <div class="logo-container">
-          <a class="logo-container__logo" href="#">
-            <img class="logo-container__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип PINK">
-          </a>
-          <button class="logo-container__nav-close">
-            <span class="visually-hidden">Закрыть меню</span>
-          </button>
-          <button class="logo-container__nav-open">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
 
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
-            <li class="main-nav__item "><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
-          </ul>
-        </nav>
+      <div class="page-header__new-stripe">
 
-        <h1 class="header__title">Фотографии пользователей</h1>
+          <div class="page-header__navigation-container">
 
-        <!--центровщик здесь конец-->
+            <div class="logo-container">
+              <a class="logo-container__logo" href="index.html">
+                <img class="logo-container__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип PINK">
+              </a>
+              <button class="logo-container__nav-close">
+                <span class="visually-hidden">Закрыть меню</span>
+              </button>
+              <button class="logo-container__nav-open visually-hidden">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>
+
+
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                <li class="main-nav__item"><a href="#">Фотографии</a></li>
+                <li class="main-nav__item main-nav__item--active"><a href="form.html">Конкурс</a></li>
+                <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+              </ul>
+            </nav>
+
+          </div>
+
+
+
+
+
+      </div>
+
+
+
+
+      <h1 class="page-header__catalog-title positioner">Фотографии пользователей</h1>
+
 
     </header>
 
     <main class="main">
 
-      <section class="invitation">
+      <section class="invitation positioner">
         <h2 class="visually-hidden">Заголовок блока-приглашения</h2>
         <p class="invitation__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </section>
 
       <section class="panorama-container"><!--решил сделать панораму дня как background-->
         <h2 class="visually-hidden">Главная панорама на сайте сегодня</h2>
-        <div class="panorama-container__label">
-          <span class="panorama-container__tittle">Панорама дня</span>
+        <div class="panorama-container__label-positioner">
+          <div class="panorama-container__label">
+            <span class="panorama-container__tittle">Панорама дня</span>
+          </div>
         </div>
       </section>
 
-      <blockquote class="day-block">
+      <blockquote class="day-block positioner">
         <cite class="day-block__name">Анна</cite><span class="day-block__time"> (5 минут назад)</span>
         <p class="day-block__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
         <p class="day-block__like">
@@ -62,7 +80,7 @@
         </p>
       </blockquote>
 
-      <section class="user-photos">
+      <section class="user-photos positioner">
         <h2 class="visually-hidden">Альбом пользовательских фотографий</h2>
         <ul class="user-photos__list">
           <li class="user-photos__item">
@@ -87,7 +105,7 @@
           </li>
           <li class="user-photos__item">
             <img src="img/photo-3-mobile.jpg" width="280" height="180" alt="Вид на небоскеб снизу.">
-            <blockquote class="custom-photos__block user-block">
+            <blockquote class="user-photos__block user-block">
               <cite class="user-block__name">Борис<span class="user-block__time"> (20 часов назад)</span></cite>
               <p class="user-block__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <p class="user-block__like">
@@ -97,8 +115,8 @@
           </li>
           <li class="user-photos__item">
             <img src="img/photo-4-mobile.jpg" width="280" height="180" alt="Кубанская бахча.">
-            <blockquote class="custom-photos__block user-block">
-              <cite class="user-block__name">Сергейс<span class="user-block__time">(25 часов назад)</span></cite>
+            <blockquote class="user-photos__block user-block">
+              <cite class="user-block__name">Сергей<span class="user-block__time">(25 часов назад)</span></cite>
               <p class="user-block__description">Самая кубанская в мире!</p>
               <p class="user-block__like">
                 <img class="day-block__icon"  src="img/heart.svg" width="13" height="12" alt="Сердечко">
@@ -107,7 +125,7 @@
           </li>
           <li class="user-photos__item">
             <img src="img/photo-5-mobile.jpg" width="280" height="180" alt="Вид с обрыва сверху вниз.">
-            <blockquote class="custom-photos__block user-block">
+            <blockquote class="user-photos__block user-block">
               <cite class="user-block__name">Максим<span class="user-block__time">(40 часов назад)</span></cite>
               <p class="user-block__description">Где снег-то?</p>
               <p class="user-block__like">
@@ -117,7 +135,7 @@
           </li>
           <li class="user-photos__item">
             <img src="img/photo-6-mobile.jpg" width="280" height="180" alt="Вид на крыло самолета">
-            <blockquote class="custom-photos__block user-block">
+            <blockquote class="user-photos__block user-block">
               <cite class="user-block__name">Надежда<span class="user-block__time">(45 часов назад)</span></cite>
               <p class="user-block__description">Всем GM и взаимные лайки!</p>
               <p class="user-block__like">
@@ -137,46 +155,55 @@
 
       <section class="photo-editor"><!--у этой секции должен быть сереый фон, не может быть центровщиком.-->
         <h2 class="visually-hidden">Редактор фотографий</h2>
+        <div class="positioner">
+          <div class="photo-editor__common-container">
 
-        <div class="photo-editor__image-container">
-          <img class="photo-editor__image" src="img/upload-mobile.jpg" width="280" height="374" alt="Образец фото">
-        </div>
+            <div class="photo-editor__image-container">
+              <img class="photo-editor__image" src="img/upload-mobile.jpg" width="280" height="374" alt="Образец фото">
+            </div>
+            <div class="photo-editor__customization customization">
 
-        <div class="photo-editor__customization customization">
+              <div class="customization__range-container">
+                <span class="customization__item cut-tool">
+                  <img src="img/crop.svg" width="44" height="44" alt="функция обрезки изображения">
+                </span>
+                <input class="customization__range" type="range" min="0" max="100" step="1" value="80">
 
-          <div class="customization__range-container">
-            <span class="customization__item cut-tool">
-              <img src="img/crop.svg" width="44" height="44" alt="функция обрезки изображения">
-            </span>
-            <input class="customization__range" type="range" min="0" max="100" step="1" value="80">
+              </div>
+              <div class="customization__range-container">
+                <span class="customization__item color-tool">
+                  <img src="img/fill.svg" width="48" height="43" alt="функция наполнить цветом">
+                </span>
+                <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="60">
+              </div>
+              <div class="customization__range-container">
+                <span class="customization__item brightness-tool">
+                  <img src="img/contrast.svg" width="32" height="32" alt="функция установить яркость">
+                </span>
+                <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="40">
+              </div>
 
+            </div>
+            <input class="customization__range-common" type="range" min="0" max="100" step="1" value="80">
           </div>
 
-          <div class="customization__range-container">
-            <span class="customization__item color-tool">
-              <img src="img/fill.svg" width="48" height="43" alt="функция наполнить цветом">
-            </span>
-            <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="60">
+
+
+          <div class=""><!--вспомогательный блок. Его верхний бордер будет как тег hr по макету-->
+            <div class="customization-buttons"><!--Этому блоку нужен цетровщик-->
+              <button class="customization__buttons-send" type="button" aria-label="Отправить">Запостить</button>
+              <button class="customization__buttons-cancel" type="button" aria-label="Отменить">Отмена</button>
+            </div>
           </div>
 
+        </div><!--positioner-->
 
-          <div class="customization__range-container">
-            <span class="customization__item brightness-tool">
-              <img src="img/contrast.svg" width="32" height="32" alt="функция установить яркость">
-            </span>
-            <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="40">
-          </div>
 
-        </div>
+
 
       </section>
 
-      <div class=""><!--вспомогательный блок. Его верхний бордер будет как тег hr по макету-->
-        <div class="customization-buttons"><!--Этому блоку нужен цетровщик-->
-          <button class="customization__buttons-send" type="button" aria-label="Отправить">Запостить</button>
-          <button class="customization__buttons-cancel" type="button" aria-label="Отменить">Отмена</button>
-        </div>
-      </div>
+
 
 
 
@@ -227,6 +254,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/app.js"></script>
   </body>
 </html>

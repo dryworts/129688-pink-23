@@ -1,0 +1,33 @@
+.effect {
+  @media (min-width: @desktop-width) {
+    background-color: @grey;
+  }
+}
+
+.effect__container {
+  display: none;
+
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/clock-tablet.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    min-height: 330px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/clock-desktop.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    min-height: 330px;
+  }
+}
+
+.effect__container__right {
+  align-self: flex-end;
+  width: 310px;
+}

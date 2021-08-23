@@ -1,1 +1,32 @@
-//
+.photo-editor {
+  background-color: @grey;
+}
+
+.photo-editor__common-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    //
+  }
+}
+
+.photo-editor__customization {
+  // text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}

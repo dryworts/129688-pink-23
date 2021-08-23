@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/192.svg" type="image/svg+xml">
@@ -10,169 +11,198 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header form-header">
 
-        <!--цетровщик здесь начало-->
-        <div class="logo-container">
-          <a class="logo-container__logo" href="#">
-            <img class="logo-container__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип PINK">
-          </a>
-          <button class="logo-container__nav-close">
-            <span class="visually-hidden">Закрыть меню</span>
-          </button>
-          <button class="logo-container__nav-open">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-        </div>
 
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
-            <li class="main-nav__item main-nav__item--active"><a>Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
-          </ul>
-        </nav>
+      <div class="page-header__new-stripe">
 
-        <h1 class="header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <div class="page-header__navigation-container">
 
-        <!--центровщик здесь конец-->
+            <div class="logo-container">
+              <a class="logo-container__logo" href="index.html">
+                <img class="logo-container__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип PINK">
+              </a>
+              <button class="logo-container__nav-close">
+                <span class="visually-hidden">Закрыть меню</span>
+              </button>
+              <button class="logo-container__nav-open visually-hidden">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>
+
+
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
+                <li class="main-nav__item main-nav__item--active"><a href="#">Конкурс</a></li>
+                <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+              </ul>
+            </nav>
+
+          </div>
+
+
+
+
+
+      </div>
+
+
+
+
+      <h1 class="page-header__form-title positioner">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
 
     </header>
 
+
     <main class="main">
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__description">
-          <p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-          <!--Место для Пожалуйста, заполните форму ниже:-->
+
+        <div class="form__description positioner">
+          <p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <br class="form__title__transposition"><span class="form__title__extended">Пожалуйста, заполните форму ниже:</span></p>
         </div>
 
+        <div class="form__order-container"><!--Контейнер-флекс для чередования порядка-->
 
-
-        <fieldset class="form__full-name full-name">
-          <legend class="visually-hidden">Фамилия, имя, отчество</legend>
-              <p class="full-name__surname">
-                <label class="full-name__label" for="form-surname">Фамилия</label>
-                <input class="full-name__input" id="form-surname" type="text" name="user-surname" placeholder="Укажите фамилию *">
-              </p>
-              <p class="full-name__name">
-                <label class="full-name__label" for="form-name">Имя</label>
-                <input class="full-name__input" id="form-name" type="text" name="user-name" placeholder="Укажите ваше имя *">
-              </p>
-              <p class="full-name__patronymic">
-                <label class="full-name__label" for="form-patronymic">Отчество</label>
-                <input class="full-name__input" id="form-patronymic" type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
-              </p>
-        </fieldset>
-
-
-
-        <div class="form__background-grey"><!--спец блок для серого фона, тянется на все доступное пространство-->
-          <fieldset class="form__progress progress"><!-- здесь центровщик-->
-            <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="progress__list">
-              <li class="progress__list-item">
-                <label class="progress__list__check" for="input-shark">
-                  <input class="progress__list__input" type="checkbox" name="mark-shark" id="input-shark" checked aria-label="Выбрано, что сделал селфи с акулой">
-                  <span class="lprogress__list__check-box"></span>
-                  <span class="lprogress__list__description">Сделал селфи с акулой</span>
-                </label>
-              </li>
-              <li class="progress__list-item">
-                <label class="progress__list__check" for="input-beach">
-                  <input class="progress__list__input" type="checkbox" name="mark-beach" id="input-beach" checked aria-label="Выбрано, что обгорел на пляже">
-                  <span class="progress__list__check-box"></span>
-                  <span class="progress__list__description">Обгорел на пляже</span>
-                </label>
-              </li>
-              <li class="progress__list-item">
-                <label class="progress__list__check" for="input-chuck">
-                  <input class="progress__list__input" type="checkbox" name="mark-chuck" id="input-chuck" aria-label="Видел Чака Норриса? Поставь галочку">
-                  <span class="progress__list__check-box"></span>
-                  <span class="progress__list__description">Видел Чака Норриса</span>
-                </label>
-              </li>
-              <li class="progress__list-item">
-                <label class="progress__list__check" for="input-souvenir">
-                  <input class="progress__list__input" type="checkbox" name="mark-souvenir" id="input-souvenir" aria-label="Накупил сувениров? Поставь галочку">
-                  <span class="progress__list__check-box"></span>
-                  <span class="progress__list__description">Накупил сувениров</span>
-                </label>
-              </li>
-              <li class="progress__list-item">
-                <label class="progress__list__check" for="input-tower">
-                  <input class="progress__list__input" type="checkbox" name="mark-tower" id="input-tower" checked aria-label="Выбрано, что удержал башню?">
-                  <span class="progress__list__check-box"></span>
-                  <span class="progress__list__description">Удержал башню</span>
-                </label>
-              </li>
-              <li class="progress__list-item">
-                <label class="progress__list__check" for="input-hotel">
-                  <input class="progress__list__input" type="checkbox" name="mark-hotel" id="input-hotel" aria-label="Разгромил отель? Поставь галочку">
-                  <span class="progress__list__check-box"></span>
-                  <span class="progress__list__description">Разгромил отель</span>
-                </label>
-              </li>
-            </ul>
+          <fieldset class="form__full-name full-name">
+            <legend class="visually-hidden">Фамилия, имя, отчество</legend>
+                <p class="full-name__surname">
+                  <label class="full-name__label" for="form-surname">Фамилия</label>
+                  <input class="full-name__input" id="form-surname" type="text" name="user-surname" placeholder="Укажите фамилию *">
+                </p>
+                <p class="full-name__name">
+                  <label class="full-name__label" for="form-name">Имя</label>
+                  <input class="full-name__input" id="form-name" type="text" name="user-name" placeholder="Укажите ваше имя *">
+                </p>
+                <p class="full-name__patronymic">
+                  <label class="full-name__label" for="form-patronymic">Отчество</label>
+                  <input class="full-name__input" id="form-patronymic" type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
+                </p>
           </fieldset>
-        </div>
 
 
 
-
-        <fieldset class="form__contacts contacts">
-          <legend class="visually-hidden">Контактная информация</legend>
-          <p class="contacts__phone">
-            <label class="contacts__phone-label" for="form-phone">Номер телефона</label>
-            <input class="contacts__phone-input" id="form-phone" type="tel" name="user-phone" placeholder="Номер, пожалуйста">
-          </p>
-          <p class="contacts__mail">
-            <label class="contacts__mail-label" for="form-mail">Адрес почты</label>
-            <input class="contacts__mail-input" id="form-mail" type="email" required name="user-mail" placeholder="Введите почту *">
-          </p>
-        </fieldset>
-
-
-
-        <div class="form__background-grey">
-          <fieldset class="form__applications applications">
-            <legend class="applications__title">С какими приложениями путешествовали?</legend>
-              <ul class="applications__list">
-                <li class="applications__list-item">
-                  <label class="applications__list-label" for="application-ios">
-                    <input class="applications__list-radio" type="radio" name="radio-item" value="ios" id="application-ios" checked aria-label="Выбрано приложение Pink для iOS">
-                    <span class="applications__list-box"></span>
-                    <span class="applications__list-description">Pink для iOS</span>
+          <div class="form__progress form__background-grey"><!--спец блок для серого фона, тянется на все доступное пространство-->
+            <fieldset class="progress"><!-- здесь центровщик-->
+              <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="progress__list">
+                <li class="progress__list-item">
+                  <label class="progress__list__check" for="input-shark">
+                    <input class="progress__list__input" type="checkbox" name="mark-shark" id="input-shark" checked aria-label="Выбрано, что сделал селфи с акулой">
+                    <span class="lprogress__list__check-box"></span>
+                    <span class="lprogress__list__description">Сделал селфи с акулой</span>
                   </label>
                 </li>
-                <li class="applications__list-item">
-                  <label class="applications__list-label" for="application-android">
-                    <input class="applications__list-radio" type="radio" name="radio-item" value="android" id="application-android" aria-label="Выбрать приложение Pink для Android">
-                    <span class="applications__list-box"></span>
-                    <span class="applications__list-description">Pink на Android</span>
+                <li class="progress__list-item">
+                  <label class="progress__list__check" for="input-beach">
+                    <input class="progress__list__input" type="checkbox" name="mark-beach" id="input-beach" checked aria-label="Выбрано, что обгорел на пляже">
+                    <span class="progress__list__check-box"></span>
+                    <span class="progress__list__description">Обгорел на пляже</span>
                   </label>
                 </li>
-                <li class="applications__list-item">
-                  <label class="applications__list-label" for="application-windows">
-                    <input class="applications__list-radio" type="radio" name="radio-item" value="windows" id="application-windows" aria-label="Выбрать приложение Pink для Windows Phone">
-                    <span class="applications__list-box"></span>
-                    <span class="applications__list-description">Windows Phone</span>
+                <li class="progress__list-item">
+                  <label class="progress__list__check" for="input-chuck">
+                    <input class="progress__list__input" type="checkbox" name="mark-chuck" id="input-chuck" aria-label="Видел Чака Норриса? Поставь галочку">
+                    <span class="progress__list__check-box"></span>
+                    <span class="progress__list__description">Видел Чака Норриса</span>
+                  </label>
+                </li>
+                <li class="progress__list-item">
+                  <label class="progress__list__check" for="input-souvenir">
+                    <input class="progress__list__input" type="checkbox" name="mark-souvenir" id="input-souvenir" aria-label="Накупил сувениров? Поставь галочку">
+                    <span class="progress__list__check-box"></span>
+                    <span class="progress__list__description">Накупил сувениров</span>
+                  </label>
+                </li>
+                <li class="progress__list-item">
+                  <label class="progress__list__check" for="input-tower">
+                    <input class="progress__list__input" type="checkbox" name="mark-tower" id="input-tower" checked aria-label="Выбрано, что удержал башню?">
+                    <span class="progress__list__check-box"></span>
+                    <span class="progress__list__description">Удержал башню</span>
+                  </label>
+                </li>
+                <li class="progress__list-item">
+                  <label class="progress__list__check" for="input-hotel">
+                    <input class="progress__list__input" type="checkbox" name="mark-hotel" id="input-hotel" aria-label="Разгромил отель? Поставь галочку">
+                    <span class="progress__list__check-box"></span>
+                    <span class="progress__list__description">Разгромил отель</span>
                   </label>
                 </li>
               </ul>
+            </fieldset>
+          </div>
+
+
+
+
+          <fieldset class="form__contacts contacts">
+            <legend class="visually-hidden">Контактная информация</legend>
+            <p class="contacts__phone">
+              <label class="contacts__phone-label" for="form-phone">Номер телефона</label>
+              <input class="contacts__phone-input" id="form-phone" type="tel" name="user-phone" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="contacts__mail">
+              <label class="contacts__mail-label" for="form-mail">Адрес почты</label>
+              <input class="contacts__mail-input" id="form-mail" type="email" required name="user-mail" placeholder="Введите почту *">
+            </p>
           </fieldset>
+
+
+
+          <div class="form__applications form__background-grey">
+            <fieldset class="applications">
+              <legend class="applications__title">С какими приложениями путешествовали?</legend>
+                <ul class="applications__list">
+                  <li class="applications__list-item">
+                    <label class="applications__list-label" for="application-ios">
+                      <input class="applications__list-radio" type="radio" name="radio-item" value="ios" id="application-ios" checked aria-label="Выбрано приложение Pink для iOS">
+                      <span class="applications__list-box"></span>
+                      <span class="applications__list-description">Pink для iOS</span>
+                    </label>
+                  </li>
+                  <li class="applications__list-item">
+                    <label class="applications__list-label" for="application-android">
+                      <input class="applications__list-radio" type="radio" name="radio-item" value="android" id="application-android" aria-label="Выбрать приложение Pink для Android">
+                      <span class="applications__list-box"></span>
+                      <span class="applications__list-description">Pink на Android</span>
+                    </label>
+                  </li>
+                  <li class="applications__list-item">
+                    <label class="applications__list-label" for="application-windows">
+                      <input class="applications__list-radio" type="radio" name="radio-item" value="windows" id="application-windows" aria-label="Выбрать приложение Pink для Windows Phone">
+                      <span class="applications__list-box"></span>
+                      <span class="applications__list-description">Windows Phone</span>
+                    </label>
+                  </li>
+                </ul>
+            </fieldset>
+          </div>
+
+
+
+          <fieldset class="form__emotions emotions">
+            <legend class="emotions__title">Опишите свои эмоции</legend>
+            <div class="emotions__description">
+              <label class="emotions__label visually-hidden" for="description-content">Текст письма:</label>
+              <textarea class="emotions__textarea" rows="4" cols="30" name="user-description" id="description-content" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+          </fieldset>
+
+
+
+
         </div>
 
 
 
-        <fieldset class="form__emotions emotions">
-          <legend class="emotions__title">Опишите свои эмоции</legend>
-          <div class="emotions__description">
-            <label class="emotions__label visually-hidden" for="description-content">Текст письма:</label>
-            <textarea class="emotions__textarea" rows="4" cols="30" name="user-description" id="description-content" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </div>
-        </fieldset>
-        <div class="form__button">
+
+
+
+
+
+        <div class="form__button positioner">
           <button class="form__button-item" type="submit">Отправить форму</button>
           <p class="form__button-description"><span class="form__button-pinkish">*</span> - Обязательные для заполнения поля</p>
         </div>
@@ -232,6 +262,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/app.js"></script>
   </body>
 </html>

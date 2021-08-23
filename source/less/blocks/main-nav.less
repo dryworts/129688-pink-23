@@ -1,17 +1,44 @@
+.main-nav {
+  // position: absolute;
+  width: 100%;
+  min-width: 320px;
+
+  @media (min-width: @desktop-width) {
+    position: unset;
+    width: unset;
+    min-width: unset;
+  }
+}
+
 .main-nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: block;
+  // display: block;
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
+    background-color: transparent;
   }
 }
+// китрый блок, эти св-ва нужны, чтобы находясь в таблетке, при увеличении до десктопа, меню отображалось.
+.main-nav__list--closed {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+  }
+}
+
 
 .main-nav__item {
   font-style: normal;
@@ -20,7 +47,7 @@
   line-height: 14px;
   background: #283645;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  //width: 100%;
+  width: 100%;
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -29,6 +56,7 @@
   @media (min-width: @desktop-width) {
     margin-left: 78px;
     box-shadow: unset;
+    background-color: transparent;
   }
 }
 
