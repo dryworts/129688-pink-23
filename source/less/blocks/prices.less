@@ -65,15 +65,28 @@
   text-transform: uppercase;
   color: @white;
   background: @basic-font;
+  // padding-top: 14px;
+  // padding-bottom: 0;
 }
 
-.prices__table-title p {
+// .prices__table-title p {
+//   font-weight: 300;
+//   font-size: 18px;
+//   line-height: 30px;
+//   text-align: center;
+//   text-transform: uppercase;
+//   color: @white;
+// }
+.prices__table-price {
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   color: @white;
+  padding-bottom: 0;
+  margin-bottom: 26px;
+  margin-top: 0;
 }
 
 .prices__table-cell {
@@ -83,8 +96,8 @@
   border: 2px solid #e5e5e5;
   min-width: 280px;
   text-transform: uppercase;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 13px;
+  padding-bottom: 10px;
   padding-left: 20px;
 
   @media (min-width: @tablet-width) {
@@ -125,7 +138,7 @@
   border-right: 2px solid @grey;
 }
 
-.magic {
+.prices__table-title-container {
   transform: translate(-560px, 0);
 
   @media (min-width: @tablet-width) {
@@ -135,4 +148,49 @@
   @media (min-width: @desktop-width) {
     transform: unset;
   }
+}
+
+.prices__table-hit {
+  position: relative;
+}
+
+.prices__table-label-container {
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  background-image: url("../img/hit-mobile.png");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+}
+
+.prices__table__cell-description {
+  padding-top: 12px;
+  display: inline-block;
+}
+
+.prices__controls {
+  text-align: center;
+  margin-top: 29px;
+}
+
+.prices__controls-button {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  margin: 0 8px;
+  background-color: @basic-font;
+  opacity: 0.3;
+  border: 0;
+  border-radius: 50%;
+}
+
+.prices__controls-button--current {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0 6px;
+  border-radius: 50%;
+  background-color: @white;
+  border: 5px solid @basic-font;
 }
