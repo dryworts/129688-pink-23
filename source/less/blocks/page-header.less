@@ -35,8 +35,8 @@
 // }
 
 .page-header__background-wrapper {
-  outline: 3px solid rgba(255, 255, 0, 0.7);
-  outline-offset: -3px;
+  // outline: 3px solid rgba(255, 255, 0, 0.7);
+  // outline-offset: -3px;
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/hand-phone-mobile.png");
@@ -57,45 +57,6 @@
   }
 }
 
-// .page-header__nav-stripe__container {
-//   width: 320px;
-//   margin: 0 auto;
-//   padding: 0 20px;
-//   outline: 3px solid rgba(255, 0, 191, 0.7);
-//   outline-offset: -3px;
-
-//   @media (min-width: @tablet-width) {
-//     width: 660px;
-//     margin: 0 auto;
-//     padding: 0 20px;
-//   }
-
-//   @media (min-width: @desktop-width) {
-//     width: auto;
-//   }
-// }
-
-
-// .page-header__adaptive-container {
-//   @media (min-width: @tablet-width) {
-//     outline: 3px solid rgba(255, 0, 0, 0.7);
-//     outline-offset: -3px;
-//   }
-
-
-//   @media (min-width: @desktop-width) {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: nowrap;
-//     // min-width: 1200px;
-//     // margin: 0 auto;
-//     // padding: 0 130px;
-//     background: rgba(0, 0, 0, 0.3);
-//     outline: 3px solid rgba(255, 0, 0, 0.7);
-//     outline-offset: -3px;
-//   }
-// }
-
 .page-header__title {
   color: @white;
   font-weight: 300;
@@ -104,6 +65,32 @@
   text-align: center;
   margin-top: 22px;
   margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+    display: block;
+    text-align: center;
+    margin-top: 94px;
+    width: 340px;
+    padding: 0 50px;
+    margin-left: unset;
+  }
+
+  @media (min-width: @desktop-width) {
+    //
+  }
+}
+
+.page-header__title-break {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .page-header__hand-background-container {
