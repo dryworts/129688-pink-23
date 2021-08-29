@@ -31,3 +31,36 @@
   align-self: flex-end;
   width: 310px;
 }
+
+.effect__container__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 95px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.effect__container__break {
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.effect__container__content {
+  margin-top: 9px;
+}
+
+.effect__container__content__break {
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
