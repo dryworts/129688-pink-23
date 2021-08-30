@@ -15,6 +15,14 @@
   color: @black;
   margin-top: 39px;
   display: inline-block;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .comments__list-description {
@@ -24,6 +32,13 @@
   text-align: center;
   color: @basic-font;
   margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 33px;
+  }
 }
 
 .comments__list-item {
@@ -36,6 +51,11 @@
   vertical-align: baseline;
   background: transparent;
   quotes: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .comments__controls {
@@ -61,4 +81,15 @@
   border-radius: 50%;
   background-color: @white;
   border: 5px solid @basic-font;
+}
+
+.comments__list-profession {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    order: 3;
+    margin-top: 1px;
+    margin-bottom: 33px;
+  }
 }

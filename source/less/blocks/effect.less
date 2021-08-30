@@ -13,8 +13,9 @@
     flex-direction: column;
     background-image: url("../img/clock-tablet.png");
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: 20px 53px;
     min-height: 330px;
+    margin-bottom: 83px;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,7 +23,7 @@
     flex-direction: column;
     background-image: url("../img/clock-desktop.png");
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: 20px 53px;
     min-height: 330px;
   }
 }
@@ -53,6 +54,11 @@
 
 .effect__container__content {
   margin-top: 9px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 9px;
+    margin-bottom: 11px;
+  }
 }
 
 .effect__container__content__break {

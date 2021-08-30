@@ -1,4 +1,11 @@
 .address {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
@@ -13,6 +20,10 @@
   text-align: center;
   margin-bottom: 0;
   padding-top: 1px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .address__ring {
@@ -34,6 +45,10 @@
 .address__postal {
   text-align: center;
   margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 12px;
+  }
 }
 
 .address__phone a,
@@ -45,3 +60,12 @@
   text-align: center;
   color: @pink;
 }
+
+.address__post-break {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
+}
+
