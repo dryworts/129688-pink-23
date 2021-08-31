@@ -226,3 +226,25 @@
     padding-left: 15px;
   }
 }
+
+.prices__table-mobile-cell {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.prices__table-mobile-sign {
+  float: right;
+
+  @media (min-width: @tablet-width) {
+    float: unset;
+  }
+
+  @media (min-width: @desktop-width) {
+    float: unset;
+  }
+}
