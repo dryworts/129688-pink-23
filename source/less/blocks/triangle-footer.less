@@ -1,12 +1,32 @@
 .triangle-footer {
-  min-height: 123px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-  background-image: url("../../img/triangle-footer.png");
-  background-position: 50% 100%;
+  min-height: 73px;
+  background-image: url("../img/triangle-footer.png");
+  // background-position: 0 -58px;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: -100px;
   z-index: 10;
   position: relative;
+  margin-bottom: -32px;
+  /* background-color: aqua; */
+  margin-top: 0;
+
+  @media (min-width: @tablet-width) {
+    min-height: 92px;
+    background-image: url("../img/triangle-footer-tablet.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 102% 102%;
+    z-index: 10;
+    position: relative;
+    margin-bottom: -80px;
+    // background-color: aqua;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 123px;
+    background-image: url("../img/triangle-footer-desktop.png");
+    margin-bottom: -119px;
+  }
 }

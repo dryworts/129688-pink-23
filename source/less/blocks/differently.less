@@ -10,6 +10,23 @@
   }
 }
 
+.differently__positioner {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 340px;
+    padding: 0 20px;
+    margin-left: unset;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 340px;
+    margin: 0 110px;
+  }
+}
+
 .differently__button {
   height: 55px;
   font-style: normal;
@@ -22,6 +39,21 @@
   border: 3px solid @white;
   border-radius: 29px;
   width: 100%;
+  margin-top: 27px;
+  margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
+    margin-bottom: 72px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 18px;
+  }
 }
 
 .differently__applications {
@@ -30,7 +62,15 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .differently__description {
@@ -39,4 +79,17 @@
   line-height: 24px;
   text-align: center;
   color: @white;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    //
+  }
 }

@@ -5,11 +5,40 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 65px;
+    margin-top: 45px;
+  }
+}
+
+.page-footer__logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 32px;
 }
 
 .page-footer__copyright {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 31px;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 56px;
+    margin-bottom: unset;
+  }
+}
+
+.copyright__text {
+  margin-right: 14px;
 }

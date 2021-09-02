@@ -20,13 +20,19 @@
 
             <div class="logo-container">
               <a class="logo-container__logo" href="#">
-                <img class="logo-container__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип PINK">
+                <img class="logo-container__logo-image logo-container__logo-image--mobile" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип PINK">
+                <img class="logo-container__logo-image logo-container__logo-image--tablet" src="img/logo-tablet.svg" width="145" height="40" alt="Логотип PINK">
+                <img class="logo-container__logo-image logo-container__logo-image--desktop" src="img/logo-desktop.svg" width="147" height="40" alt="Логотип PINK">
               </a>
+
               <button class="logo-container__nav-close">
                 <span class="visually-hidden">Закрыть меню</span>
               </button>
               <button class="logo-container__nav-open visually-hidden">
                 <span class="visually-hidden">Открыть меню</span>
+                <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.13659 0.00020839C0.986512 -0.00251551 0.837358 0.0214885 0.698091 0.0707781C0.558823 0.120068 0.432317 0.193625 0.326173 0.28703C0.22003 0.380436 0.136442 0.49176 0.0804303 0.614315C0.024419 0.73687 -0.00285856 0.868124 0.000236809 1.00019V3.00016C0.000236809 3.26537 0.119959 3.51972 0.333067 3.70725C0.546174 3.89478 0.83521 4.00014 1.13659 4.00014H48.8634C49.0135 4.00286 49.1626 3.97886 49.3019 3.92957C49.4412 3.88028 49.5677 3.80672 49.6738 3.71332C49.78 3.61991 49.8636 3.50859 49.9196 3.38603C49.9756 3.26348 50.0029 3.13222 49.9998 3.00016V1.00019C49.9998 0.734979 49.88 0.48063 49.6669 0.293097C49.4538 0.105563 49.1648 0.00020839 48.8634 0.00020839H1.13659ZM1.13659 10C0.986512 9.99731 0.837358 10.0213 0.698091 10.0706C0.558823 10.1199 0.432317 10.1935 0.326173 10.2869C0.22003 10.3803 0.136442 10.4916 0.0804303 10.6141C0.024419 10.7367 -0.00285856 10.868 0.000236809 11V13C0.000236809 13.2652 0.119959 13.5195 0.333067 13.7071C0.546174 13.8946 0.83521 14 1.13659 14H48.8634C49.0135 14.0027 49.1626 13.9787 49.3019 13.9294C49.4412 13.8801 49.5677 13.8065 49.6738 13.7131C49.78 13.6197 49.8636 13.5084 49.9196 13.3859C49.9756 13.2633 50.0029 13.132 49.9998 13V11C49.9998 10.7348 49.88 10.4805 49.6669 10.2929C49.4538 10.1054 49.1648 10 48.8634 10H1.13659ZM1.13659 19.9999C0.986512 19.9971 0.837358 20.0211 0.698091 20.0704C0.558823 20.1197 0.432317 20.1933 0.326173 20.2867C0.22003 20.3801 0.136442 20.4914 0.0804303 20.614C0.024419 20.7365 -0.00285856 20.8678 0.000236809 20.9998V22.9998C0.000236809 23.265 0.119959 23.5194 0.333067 23.7069C0.546174 23.8944 0.83521 23.9998 1.13659 23.9998H48.8634C49.0135 24.0025 49.1626 23.9785 49.3019 23.9292C49.4412 23.8799 49.5677 23.8064 49.6738 23.713C49.78 23.6196 49.8636 23.5082 49.9196 23.3857C49.9756 23.2631 50.0029 23.1319 49.9998 22.9998V20.9998C49.9998 20.7346 49.88 20.4803 49.6669 20.2927C49.4538 20.1052 49.1648 19.9999 48.8634 19.9999H1.13659Z" fill="white"/>
+                </svg>
               </button>
             </div>
 
@@ -36,7 +42,7 @@
                 <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
                 <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
                 <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-                <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+                <li class="main-nav__item"><a href="#">HTML <span class="main-nav__desktop-item">Academy<span></a></li>
               </ul>
             </nav>
 
@@ -60,13 +66,13 @@
 
 
 
-      <h1 class="page-header__title">Взгляните на жизнь иначе!</h1>
+      <h1 class="page-header__title">Взгляните на жизнь<br class="page-header__title-break"> иначе!</h1>
       <div class="page-header__hand-background-container">
         <!-- этот блок только для мобильной версии, в нем рука. -->
       </div>
 
       <div class="differently">
-        <div class="positioner">
+        <div class="differently__positioner">
           <button class="differently__button">Скачать приложение</button>
           <div class="differently__applications">
             <a class="differently__applications-apple" href="#">
@@ -90,7 +96,7 @@
         <div class="positioner">
           <h2 class="visually-hidden">Особенности приложения PINK </h2>
           <p class="features__content">Устали от серости мегаполиса?</p>
-          <p class="features__content">Нам есть, что вам предложить!</p>
+          <p class="features__content-suggest">Нам есть, что вам<br class="features__content-break"> предложить!</p>
 
           <div class="features__image-container-general"> <!--контейнер для планшетной версии-->
             <img class="features__image--general" src="img/iphone-tablet-1.png" height="482" width="268" alt="Изображение с надписью 'Всем привет!'">
@@ -102,13 +108,13 @@
               </li>
               <li class="features__item">
                 <img class="features__image-hidden" src="img/image-hidden-second-1.png" height="300" width="308" alt="Изображение Меняет мир вокруг">
-                <h3 class="fetures__header">Меняет мир вокруг</h3>
-                <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                <h3 class="fetures__header fetures__header--change">Меняет мир<br class="fetures__header-break"> вокруг</h3>
+                <p class="features__description">Сделайте снимок и<br class="features__description-snapshot-break"> украсьте его смайликом<br class="features__description-snapshot-break"> или текстовой подписью,<br class="features__description-snapshot-break"> чтобы <br class="features__description-break">усилить эффект</p>
               </li>
               <li class="features__item">
                 <img class="features__image-hidden" src="img/image-hidden-third-1.png" height="300" width="308" alt="Изображение Заводит новых друзей">
-                <h3 class="fetures__header">Заводит новых друзей</h3>
-                <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                <h3 class="fetures__header fetures__header--friends">Заводит<br class="fetures__header-break"> новых друзей</h3>
+                <p class="features__likes">Ставьте лайки,<br class="features__likes-break"> комментируйте, делитесь фотографиями с друзьями<br class="features__likes-break"> и заводите новых</p>
               </li>
             </ul>
           </div>
@@ -122,9 +128,9 @@
       <section class="effect">
         <div class="effect__container positioner">
           <div class="effect__container__right">
-            <h3 class="effect__container__title">Эффект на 24 часа!</h3>
-            <p class="effect__container__content">Британские ученые провели исследования и доказали,
-              что положительный эффект от использования приложения длится целые сутки!</p>
+            <h3 class="effect__container__title">Эффект<br class="effect__container__break"> на 24 часа!</h3>
+            <p class="effect__container__content">Британские ученые провели исследования<br class="effect__container__content__break"> и доказали,<br class="effect__container__content-desktop-break">
+              что положительный эффект<br class="effect__container__content__break"> от использования приложения длится целые сутки!</p>
             <a class="effect__container__link" href="#">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -137,8 +143,10 @@
           <div class="comments__list">
             <blockquote class="comments__list-item">
               <cite class="comments__list-user">Николай Петров</cite>
-              <!--<p class="comments__list-profession">25 лет, водитель трамвая</p>-->
+              <p class="comments__list-profession">25 лет, водитель трамвая</p>
               <p class="comments__list-description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <button class=" comments__list-button-left"></button>
+              <button class="comments__list-button-right"></button>
             </blockquote>
           </div>
           <div class="comments__controls">
@@ -158,31 +166,35 @@
         <div class="prices__wrapper">
           <table class="prices__table">
             <thead>
-              <tr>
+              <tr class="prices__table-title-container">
                 <th class="prices__table-title prices__table-title--invisible prices__hidden-cell"></th><!-- class="prices__hidden-cell" -->
-                <th class="prices__table-title prices__table-title--grey-border">База<p>1,99 USD</p></th>
-                <th class="prices__table-title prices__table-title--grey-border">Стандарт<p>3,99 USD</p></th>
-                <th class="prices__table-title">Анлим<p>9,99 USD</p></th>
+                <th class="prices__table-title prices__table-title--grey-border"><span class="prices__table__cell-description">База</span><p class="prices__table-price">1,99 USD</p></th>
+                <th class="prices__table-title prices__table-title--grey-border prices__table-hit"><span class="prices__table__cell-description">Стандарт</span><p class="prices__table-price">3,99 USD</p>
+                  <div class="prices__table-label-container">
+
+                  </div>
+                </th>
+                <th class="prices__table-title"><span class="prices__table__cell-description">Анлим</span><p class="prices__table-price">9,99 USD</p></th>
               </tr>
             </thead>
             <tbody>
 
               <tr class="prices__table-row">
-                <td class="prices__table-cell prices__table-cell--width prices__hidden-cell">Розовый фильтр</td>
+                <td class="prices__table-cell prices__table-cell--width prices__table-cell--left prices__hidden-cell">Розовый фильтр<span class="prices__table__smart"><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
                 <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
-                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
-                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
-              </tr>
-              <tr class="prices__table-row">
-                <td class="prices__table-cell prices__hidden-cell">Смайлики</td>
-                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/no.svg" width="27" height="27" alt="крестик"></span></td>
-                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span class="prices__table-mobile-cell">Розовый фильтр</span><span class="prices__table-mobile-sign"><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
                 <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
               </tr>
               <tr class="prices__table-row">
-                <td class="prices__table-cell prices__hidden-cell">Комментарии</td>
+                <td class="prices__table-cell prices__hidden-cell prices__table-cell--left">Смайлики<span class="prices__table__smart"><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
                 <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/no.svg" width="27" height="27" alt="крестик"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span class="prices__table-mobile-cell">Смайлики</span><span class="prices__table-mobile-sign"><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+              </tr>
+              <tr class="prices__table-row">
+                <td class="prices__table-cell prices__hidden-cell prices__table-cell--left">Комментарии<span class="prices__table__smart"><img src="img/no.svg" width="31" height="21" alt="галочка"></span></td>
                 <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/no.svg" width="27" height="27" alt="крестик"></span></td>
+                <td class="prices__table-cell prices__table-cell--centered"><span class="prices__table-mobile-cell">Комментарии</span><span class="prices__table-mobile-sign"><img src="img/no.svg" width="27" height="27" alt="крестик"></span></td>
                 <td class="prices__table-cell prices__table-cell--centered"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
               </tr>
             </tbody>
@@ -190,8 +202,8 @@
 
 
           <div class="prices__controls">
-            <button class="prices__controls-button prices__controls-button--current" type="button" aria-label="Первый слайд"></button>
-            <button class="prices__controls-button" type="button" aria-label="Второй слайд"></button>
+            <button class="prices__controls-button" type="button" aria-label="Первый слайд"></button>
+            <button class="prices__controls-button prices__controls-button--current" type="button" aria-label="Второй слайд"></button>
             <button class="prices__controls-button" type="button" aria-label="Третий слайд"></button>
           </div>
         </div>
@@ -204,18 +216,18 @@
         <address class="address">
 
           <div class="address__ring">
-            <p class="address__ring-title">Звоните:</p>
-            <p class="address__phone"><a href="tel:+78125556666">+7 (812)555-66-66</a></p>
+            <p class="address__ring-title address__ring-title--ring">Звоните:</p>
+            <p class="address__phone"><a href="tel:+78125556666">+7 (812) 555-66-66</a></p>
           </div>
 
           <div class="address__write">
-            <p class="address__ring-title">Пишите:</p>
+            <p class="address__ring-title address__ring-title--write">Пишите:</p>
             <p class="address__mail-address"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
           </div>
 
           <div class="address__postal">
-            <p class="address__ring-title">Приезжайте в гости:</p>
-            <span class="address__post-address">ул. Большая Конюшенная, 19/8</span>
+            <p class="address__ring-title address__ring-title--come">Приезжайте в гости:</p>
+            <span class="address__post-address">ул. Большая<br class="address__post-break"> Конюшенная, 19/8</span>
           </div>
         </address>
       </section>
@@ -226,7 +238,7 @@
         <div class="map__wrapper">
           <iframe class="map__iframe"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619247477040!5m2!1sru!2sru"
-            min-width="320" height="300" style="border: 0;" allowfullscreen="" loading="lazy">
+            min-width="320" height="200" style="border: 0;" allowfullscreen="" loading="lazy">
           </iframe>
         </div>
       </section>
@@ -273,7 +285,7 @@
         </div>
 
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/html-academy.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
         </div>
       </div>

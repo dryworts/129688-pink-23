@@ -1,8 +1,15 @@
 .address {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -11,6 +18,55 @@
   font-size: 18px;
   line-height: 25px;
   text-align: center;
+  margin-bottom: 0;
+  padding-top: 1px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    padding-left: 28px;
+  }
+}
+
+.address__ring {
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    order: 1;
+  }
+}
+
+.address__phone {
+  margin-top: 0;
+}
+
+.address__write {
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    order: 3;
+  }
+}
+
+.address__mail-address {
+  margin-top: 0;
+}
+
+.address__postal {
+  text-align: center;
+  margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+  }
 }
 
 .address__phone a,
@@ -21,4 +77,25 @@
   line-height: 33px;
   text-align: center;
   color: @pink;
+}
+
+.address__post-break {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
+}
+
+.address__ring-title--ring {
+  @media (min-width: @desktop-width) {
+    margin-top: 23px;
+    padding-left: 1px;
+  }
+}
+
+.address__ring-title--write {
+  @media (min-width: @desktop-width) {
+    margin-top: 22px;
+  }
 }

@@ -13,6 +13,22 @@
   line-height: 30px;
   text-align: center;
   color: @black;
+  margin-top: 39px;
+  display: inline-block;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .comments__list-description {
@@ -21,4 +37,126 @@
   line-height: 30px;
   text-align: center;
   color: @basic-font;
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 688px;
+    align-self: center;
+    margin-top: 101px;
+    margin-bottom: 37px;
+  }
+}
+
+.comments__list-item {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  quotes: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.comments__controls {
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.comments__controls-button {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  margin: 0 8px;
+  background-color: @basic-font;
+  opacity: 0.3;
+  border: 0;
+  border-radius: 50%;
+}
+
+.comments__controls-button--current {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0 6px;
+  border-radius: 50%;
+  background-color: @white;
+  border: 5px solid @basic-font;
+}
+
+.comments__list-profession {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    order: 3;
+    margin-top: 1px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+// .comments__list-button {
+//   display: none;
+
+//   @media (min-width: @desktop-width) {
+//     display: inline-block;
+//     width: 30px;
+//     height: 30px;
+//     background-color: red;
+//     position: absolute;
+//   }
+// }
+
+.comments__list-button-left {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    top: 137px;
+    left: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: @pink;
+    position: absolute;
+  }
+}
+
+.comments__list-button-right {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    top: 137px;
+    right: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: @pink;
+    position: absolute;
+  }
 }
