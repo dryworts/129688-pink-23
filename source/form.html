@@ -19,9 +19,12 @@
           <div class="page-header__navigation-container">
 
             <div class="logo-container">
-              <a class="logo-container__logo" href="index.html">
-                <img class="logo-container__logo-image" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип PINK">
+              <a class="logo-container__logo" href="#">
+                <img class="logo-container__logo-image logo-container__logo-image--mobile" src="img/logo-mobile.svg" width="74" height="23" alt="Логотип PINK">
+                <img class="logo-container__logo-image logo-container__logo-image--tablet" src="img/logo-tablet.svg" width="145" height="40" alt="Логотип PINK">
+                <img class="logo-container__logo-image logo-container__logo-image--desktop" src="img/logo-desktop.svg" width="147" height="40" alt="Логотип PINK">
               </a>
+
               <button class="logo-container__nav-close">
                 <span class="visually-hidden">Закрыть меню</span>
               </button>
@@ -64,7 +67,7 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
         <div class="form__description positioner">
-          <p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <br class="form__title__transposition"><span class="form__title__extended">Пожалуйста, заполните форму ниже:</span></p>
+          <p class="form__title">Поделитесь своей историей и получите шанс выиграть<br class="form__title-break"> ценный приз — 1000 миль на вашу бонусную карту! <br class="form__title__transposition"><span class="form__title__extended">Пожалуйста, заполните форму ниже:</span></p>
         </div>
 
         <div class="form__order-container"><!--Контейнер-флекс для чередования порядка-->
@@ -89,13 +92,13 @@
 
           <div class="form__progress form__background-grey"><!--спец блок для серого фона, тянется на все доступное пространство-->
             <fieldset class="progress"><!-- здесь центровщик-->
-              <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
+              <legend class="progress__title">Ваши безбашенные<br class="progress__title-break"> достижения в путешествии</legend>
               <ul class="progress__list">
                 <li class="progress__list-item">
                   <label class="progress__list__check" for="input-shark">
                     <input class="progress__list__input" type="checkbox" name="mark-shark" id="input-shark" checked aria-label="Выбрано, что сделал селфи с акулой">
-                    <span class="lprogress__list__check-box"></span>
-                    <span class="lprogress__list__description">Сделал селфи с акулой</span>
+                    <span class="progress__list__check-box"></span>
+                    <span class="progress__list__description">Сделал селфи с акулой</span>
                   </label>
                 </li>
                 <li class="progress__list-item">

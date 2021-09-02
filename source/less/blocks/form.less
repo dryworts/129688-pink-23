@@ -8,10 +8,13 @@
   @media (min-width: @tablet-width) {
     font-weight: normal;
     font-size: 18px;
+    margin-top: 91px;
   }
 
   @media (min-width: @desktop-width) {
+    font-weight: normal;
     font-size: 18px;
+    line-height: 30px;
   }
 }
 
@@ -103,13 +106,14 @@
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
+  border: 0;
 
   @media (min-width: @tablet-width) {
     width: 660px;
     margin: 0 auto;
-    // padding: 0 20px;
-    padding: 0;
+    padding: 0 20px;
     order: -6;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -203,4 +207,12 @@
     order: -2;
     width: 100%;
   }
+}
+
+.form__description {
+  margin-top: 44px;
+}
+
+.form__title-break {
+  display: none;
 }
