@@ -1,3 +1,7 @@
+.applications {
+  border: 0;
+}
+
 .applications__title {
   font-weight: normal;
   font-size: 14px;
@@ -5,6 +9,7 @@
   text-align: center;
   text-transform: uppercase;
   color: @pink;
+  padding-top: 40px;
 }
 
 .applications__list {
@@ -12,6 +17,7 @@
   margin: 0;
   padding: 0;
   display: block;
+  margin-top: 34px;
 }
 
 .applications__list-description {
@@ -20,4 +26,37 @@
   line-height: 30px;
   align-items: center;
   color: @basic-font;
+  margin-left: 58px;
+  display: inline-block;
+}
+
+.applications__list-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.applications__list-label {
+  position: relative;
+}
+
+.applications__list-box {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  background-image: url("../img/radio-selected.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  left: -12px;
+  top: -13px;
+}
+
+.applications__list-item {
+  margin-bottom: 46px;
+}
+
+.applications__list-item:last-child {
+  margin-bottom: 35px;
 }
