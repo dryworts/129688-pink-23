@@ -87,6 +87,9 @@
   text-transform: uppercase;
   color: @white;
   background-color: @green;
+  margin-top: 44px;
+  padding: 14px 0;
+  margin-bottom: 19px;
 }
 
 .form__button-pinkish {
@@ -100,6 +103,7 @@
   align-items: center;
   text-transform: uppercase;
   color: @basic-font;
+  text-align: center;
 }
 
 .form__full-name {
@@ -217,4 +221,12 @@
 
 .form__title-break {
   display: none;
+}
+
+.form__button-break {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
 }
