@@ -7,6 +7,11 @@
   padding-left: 21px;
   margin-bottom: 7px;
   display: inline-block;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    margin-right: 20px;
+  }
 }
 
 .full-name__input {
@@ -18,6 +23,10 @@
   border: 2px solid @light-grey;
   border-radius: 1px;
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .full-name__surname {
@@ -27,10 +36,30 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: 72px;
+    margin-top: 54px;
+    align-items: baseline;
+    margin-bottom: 51px;
+  }
+}
+
+.full-name__name {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 55px;
+    align-items: baseline;
   }
 }
 
 .full-name__patronymic {
   margin-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
 }
+

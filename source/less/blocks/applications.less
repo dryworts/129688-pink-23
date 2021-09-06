@@ -1,5 +1,12 @@
 .applications {
   border: 0;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @light-grey;
+    margin-top: 13px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .applications__title {
@@ -10,6 +17,10 @@
   text-transform: uppercase;
   color: @pink;
   padding-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .applications__list {
@@ -18,6 +29,10 @@
   padding: 0;
   display: block;
   margin-top: 34px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 13px;
+  }
 }
 
 .applications__list-description {
@@ -28,6 +43,10 @@
   color: @basic-font;
   margin-left: 58px;
   display: inline-block;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 108px;
+  }
 }
 
 .applications__list-radio {
@@ -51,10 +70,19 @@
   background-color: transparent;
   left: -12px;
   top: -13px;
+
+  @media (min-width: @tablet-width) {
+    left: 47px;
+    top: -11px;
+  }
 }
 
 .applications__list-item {
   margin-bottom: 46px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 42px;
+  }
 }
 
 .applications__list-item:last-child {
