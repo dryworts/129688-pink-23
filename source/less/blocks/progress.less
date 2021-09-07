@@ -1,5 +1,17 @@
 .progress {
   border: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* order: -4; */
+    border: 2px solid @light-grey;
+    margin-top: 13px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 58px;
+  }
 }
 
 .progress__title {
@@ -11,6 +23,10 @@
   color: @pink;
   padding-top: 41px;
   margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .progress__list {
@@ -18,10 +34,18 @@
   margin: 0;
   padding: 0;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 13px;
+  }
 }
 
 .progress__title-break {
   display: inline;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .progress__list__input {
@@ -41,6 +65,10 @@
   background-color: @white;
   left: -12px;
   top: -5px;
+
+  @media (min-width: @tablet-width) {
+    left: 39px;
+  }
 }
 
 .progress__list__description {
@@ -48,6 +76,10 @@
   font-size: 18px;
   line-height: 30px;
   margin-left: 46px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 96px;
+  }
 }
 
 .progress__list-item {
@@ -57,4 +89,11 @@
 
 .progress__list-item:last-child {
   margin-bottom: 35px;
+}
+
+.progress__list__hotel {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 14px;
+    display: inline-block;
+  }
 }

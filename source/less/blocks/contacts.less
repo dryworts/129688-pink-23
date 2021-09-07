@@ -1,3 +1,16 @@
+.contacts__phone {
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    margin-left: 38px;
+    position: relative;
+    margin-bottom: 22px;
+  }
+}
+
 .contacts__phone-label,
 .contacts__mail-label {
   font-weight: normal;
@@ -10,6 +23,14 @@
   display: inline-block;
 }
 
+.contacts__phone-label {
+  @media (min-width: @tablet-width) {
+    order: 2;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
 .contacts__phone-input,
 .contacts__mail-input {
   font-weight: normal;
@@ -20,14 +41,28 @@
   border: 2px solid @light-grey;
   border-radius: 1px;
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+  }
 }
 
-.contacts__phone {
-  margin-top: 30px;
+.contacts__phone-input {
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
 }
 
 .contacts__mail {
   margin-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 38px;
+    position: relative;
+    margin-bottom: 19px;
+  }
 }
 
 .contacts__information {
@@ -42,5 +77,54 @@
     color: @pink;
     display: inline-block;
     // border: 2px solid @light-grey;
+  }
+}
+
+.contacts__phone-container {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 38px;
+    width: 62px;
+    height: 63px;
+    background-color: @grey;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    background-image: url("../img/phone-icon-tablet.svg");
+  }
+}
+
+.contacts__mail-input {
+  @media (min-width: @tablet-width) {
+    order: 1;
+    margin-bottom: 11px;
+  }
+}
+
+.contacts__mail-label {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+}
+
+.contacts__mail-container {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 38px;
+    width: 62px;
+    height: 63px;
+    background-color: @grey;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    background-image: url("../img/mail-icon-tablet.svg");
   }
 }

@@ -7,6 +7,10 @@
   color: @pink;
   margin-bottom: 16px;
   padding-top: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .emotions__textarea {
@@ -21,4 +25,12 @@
   min-height: 200px;
   resize: none;
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 38px;
+    width: 500px;
+    margin-top: 22px;
+    min-height: 192px;
+    margin-bottom: 43px;
+  }
 }
