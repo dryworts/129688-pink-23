@@ -9,6 +9,11 @@
     position: relative;
     margin-bottom: 22px;
   }
+
+  @media (min-width: @desktop-width) {
+    float: left;
+    margin-bottom: 4px;
+  }
 }
 
 .contacts__phone-label,
@@ -51,6 +56,10 @@
   @media (min-width: @tablet-width) {
     order: 1;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 375px;
+  }
 }
 
 .contacts__mail {
@@ -62,6 +71,12 @@
     margin-left: 38px;
     position: relative;
     margin-bottom: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    float: right;
+    margin-right: 40px;
+    margin-bottom: 4px;
   }
 }
 
@@ -96,6 +111,10 @@
     z-index: 2;
     background-image: url("../img/phone-icon-tablet.svg");
   }
+
+  @media (min-width: @desktop-width) {
+    left: 313px;
+  }
 }
 
 .contacts__mail-input {
@@ -103,11 +122,18 @@
     order: 1;
     margin-bottom: 11px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 373px;
+    margin-left: -37px;
+    margin-top: 18px;
+  }
 }
 
 .contacts__mail-label {
   @media (min-width: @tablet-width) {
     order: 2;
+    margin-left: -40px;
   }
 }
 
@@ -126,5 +152,10 @@
     background-position: center;
     z-index: 2;
     background-image: url("../img/mail-icon-tablet.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 20px;
+    right: 0;
   }
 }

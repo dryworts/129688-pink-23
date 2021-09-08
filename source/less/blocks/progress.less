@@ -12,6 +12,12 @@
     margin-right: 20px;
     margin-bottom: 58px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 56px;
+  }
 }
 
 .progress__title {
@@ -37,6 +43,14 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+    display: flex;
+    height: 172px;
   }
 }
 
