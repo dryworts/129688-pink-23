@@ -1,3 +1,8 @@
+.day-block__grey {
+  background-color: @grey;
+  padding-left: 18px;
+}
+
 .day-block__name {
   font-weight: bold;
   font-size: 14px;
@@ -22,6 +27,7 @@
   line-height: 24px;
   align-items: center;
   color: @basic-font;
+  margin-top: 0;
 }
 
 .day-block__count {
@@ -32,3 +38,19 @@
   text-transform: uppercase;
   color: @pink;
 }
+
+.day-block__user-container {
+  padding-top: 18px;
+}
+
+.day-block__break {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.day-block__icon {
+  border: 0;
+  cursor: pointer;
+}
+
